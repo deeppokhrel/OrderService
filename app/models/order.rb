@@ -3,6 +3,8 @@ class Order < ApplicationRecord
 
   def publish
     KafkaProducer.publish("order-events", order_event_payload)
+  rescue Kafka::Error => e
+    Rails.logger.error "Failed to publish order event: #{e.message}"
   end
 
   def order_event_payload
