@@ -6,19 +6,20 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+ruby 3.3.3
 
 * System dependencies
+Install kafka
+If using HomeBrew
+brew install kafka
+
+brew install postgres@14 ( used in this project  you can change accordingly)
 
 * Configuration
+brew services start kafka
 
 * Database creation
-
-* Database initialization
+* bin/rails db:create
 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+bundle exec rspec
