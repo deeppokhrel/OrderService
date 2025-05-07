@@ -3,6 +3,10 @@
 
 This project consists of four interconnected microservices that communicate via **Kafka** and handle user registration, order management, stock updates, and user notifications through email.
 
+
+![Screenshot 2025-05-07 at 08 44 32](https://github.com/user-attachments/assets/97ea7ecb-0318-49da-a765-b217e21bd162)
+
+
 ---
 
 ## 🧱 Services Overview
