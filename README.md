@@ -76,8 +76,8 @@ config.action_mailer.smtp_settings = {
   domain: "gmail.com",
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: ENV["GMAIL_USERNAME"],
-  password: ENV["GMAIL_PASSWORD"]
+  user_name: "<USER_NAME>",
+  password: "<APP_PASSWORD">"
 }
 ```
 
@@ -87,8 +87,6 @@ config.action_mailer.smtp_settings = {
 
 ```env
 KAFKA_BROKERS=localhost:9092
-GMAIL_USERNAME=dippokhrel@gmail.com
-GMAIL_PASSWORD=zdpainzggzndesom
 ```
 
 ---
